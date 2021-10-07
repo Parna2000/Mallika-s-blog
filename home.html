@@ -1,0 +1,840 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="/mallikafavicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/mallikafavicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/mallikafavicon/favicon-16x16.png">
+    <link rel="manifest" href="/mallikafavicon/site.webmanifest">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap" rel="stylesheet">
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0px;
+            padding: 0px;
+        }
+
+        footer,
+        nav {
+            display: flex;
+            background-color: rgb(37, 37, 37);
+            /* justify-content: center; */
+            /* align-items: center; */
+        }
+
+        .foot,
+        .nav {
+            background-color: rgb(37, 37, 37);
+            border: 1px solid transparent;
+            margin: 0px;
+            padding: 20px 10px 10px 5px;
+            color: white;
+            font-size: 20px;
+            font-weight: 300;
+            text-align: center;
+            /* width: 100%; */
+            text-decoration: none;
+        }
+
+        .footright,
+        .navright {
+            background-color: rgb(37, 37, 37);
+            border: 1px solid transparent;
+            margin: 0px;
+            padding: 20px 10px 0px 5px;
+            color: white;
+            font-size: 20px;
+            font-weight: 300;
+            text-align: center;
+            /* width: 100%; */
+            text-decoration: none;
+            float: right;
+        }
+
+        .nav:hover,
+        .navright:hover,
+        .foot:hover,
+        .footright:hover {
+            color: yellow;
+            font-weight: 500;
+            /* font-size: 20px; */
+            text-decoration: underline;
+            border: 1px solid white;
+        }
+
+        .name {
+            font-family: 'Pacifico', cursive;
+            color: white;
+            font-size: 3.7vw;
+            align-self: center;
+            background-color: rgb(37, 37, 37);
+            border: 1px solid transparent;
+            margin: 0px;
+            padding: 1px 80px 0px 80px;
+        }
+
+        /* Style the search field */
+        form.example input[type=text] {
+            padding: 10px;
+            font-size: 17px;
+            border: 1px solid grey;
+            float: left;
+            width: 80%;
+            background: white;
+            /* color: white; */
+        }
+
+        /* Style the submit button */
+        form.example button {
+            float: left;
+            width: 20%;
+            padding: 10px;
+            background: #2196F3;
+            color: white;
+            font-size: 17px;
+            border: 1px solid grey;
+            border-left: none;
+            /* Prevent double borders */
+            cursor: pointer;
+        }
+
+        form.example button:hover {
+            background: #0b7dda;
+        }
+
+        /* Clear floats */
+        form.example::after {
+            content: "";
+            clear: both;
+            display: table;
+        }
+
+        .banner {
+            background-color: rgba(28, 32, 32, 0.911);
+            border: 1px solid darkslategrey;
+            background-image: url(f7.jpg);
+            margin: 0px;
+            height: 25vw;
+            width: 100%;
+            background-repeat: no-repeat;
+            background-size: 25% 25vw;
+        }
+
+        .intro {
+            background-color: rgba(28, 32, 32, 0.123);
+            border: 1px solid transparent;
+            color: white;
+
+            float: right;
+
+            margin: 2vw 10vw 0vw 1vw;
+            padding: 0vw 4vw 0vw 0vw;
+        }
+
+        .intro p {
+            font-family: 'Satisfy', cursive;
+            font-size: 2.5vw;
+        }
+
+        .moreintro a {
+            background-color: rgba(28, 32, 32, 0.486);
+            border: 1px solid white;
+            color: white;
+            border-radius: 4px;
+            font-size: 2.3vw;
+            padding: 1vw;
+            margin: 10vw 0vw 0vw 0vw;
+            text-decoration: none;
+        }
+
+        .moreintro a:hover {
+            background-color: rgba(28, 32, 32, 0.863);
+            color: yellow;
+        }
+
+        .aboutowner {
+            background-color: rgba(128, 128, 128, 0.534);
+            border: 1px solid transparent;
+            margin: 0px 0px 20px 0px;
+            padding: 2vw;
+            height: 42vw;
+            width: 100%;
+        }
+
+        .aboutowner h3 {
+            background-color: rgba(0, 128, 128, 0.685);
+            color: rgb(5, 4, 65);
+            font-weight: 700;
+            font-size: 2.2vw;
+            padding: 10px 0px 10px 10px;
+            margin: 20px 0px 10px 0px;
+        }
+
+        .about {
+            /* display: inline-block; */
+            font-size: 2vw;
+            font-weight: 600;
+            font-style: italic;
+            color: black;
+        }
+
+        .aboutowner img {
+            /* display: inline-block; */
+
+            border: 2px solid teal;
+            height: 25vw;
+            width: 20vw;
+            float: right;
+        }
+
+
+        .readmore {
+            background-color: rgba(28, 32, 32, 0.849);
+            border: 1px solid white;
+            color: white;
+            border-radius: 4px;
+            font-size: 2.3vw;
+            padding: 0.5vw;
+            margin: 100vw 0vw 0vw 0vw;
+            text-decoration: none;
+        }
+
+        .readmore:hover {
+            background-color: rgb(28, 32, 32);
+            color: yellow;
+        }
+
+        .twitter {
+            background-color: transparent;
+            border: 1px solid transparent;
+            color: #00acee;
+            font-size: 2.0vw;
+            margin: 2px;
+            padding: 0.5vw;
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        .instagram {
+            background-color: transparent;
+            border: 1px solid transparent;
+            color: #C13584;
+            ;
+            font-size: 2.0vw;
+            margin: 4px;
+            padding: 0.5vw;
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        .twitter:hover,
+        .instagram:hover {
+            /* font-size: 2.1vw; */
+            font-weight: 800;
+        }
+
+        .recipiehead {
+            background-color: transparent;
+            border: 1px solid transparent;
+            font-family: 'Satisfy', cursive;
+            font-size: 3.7vw;
+            text-align: center;
+            color: rgb(4, 39, 39);
+            margin: 20px 0px 20px 0px;
+        }
+
+        .recipies {
+            display: flex;
+            flex-wrap: nowrap;
+            /* justify-content: center; */
+            align-items: center;
+            justify-content: space-between;
+            padding: 5vw;
+        }
+
+        .recipies h4 {
+            font-size: 25px;
+        }
+
+        .recipies img {
+            height: 20vw;
+            width: 100%;
+            border: 1px solid teal;
+            /* margin: 20px; */
+        }
+
+        .recipielink {
+            display: flex;
+            background-color: transparent;
+            border: 1px solid transparent;
+            flex-wrap: nowrap;
+            /* justify-content: space-between; */
+        }
+
+        .see,
+        .search {
+            background-color: rgba(28, 32, 32, 0.849);
+            border: 1px solid white;
+            color: white;
+            height: 4.5vw;
+            /* width: 500px ; */
+            width: 70vw;
+            /* max-width: 100vw; */
+            border-radius: 4px;
+            font-size: 2.3vw;
+            padding: 0.5vw 0vw 0.5vw 10vw;
+            margin: 1vw 1vw 1vw 8vw;
+            text-decoration: none;
+        }
+
+        .see:hover,
+        .search:hover {
+            background-color: rgb(28, 32, 32);
+            color: yellow;
+        }
+
+        .news {
+            display: flex;
+            background-color: transparent;
+            border: 1px solid transparent;
+            padding: 1vw;
+            margin: 0px;
+        }
+
+        .news img {
+            border: 2px solid teal;
+            height: 25vw;
+            /* width: auto; */
+            width: 100%;
+            margin: 2vw;
+        }
+
+        .box h3 {
+            background-color: rgba(0, 128, 128, 0.685);
+            color: rgb(5, 4, 65);
+            font-weight: 700;
+            font-size: 2.2vw;
+            padding: 10px 0px 10px 10px;
+            margin: 20px 0px 10px 0px;
+        }
+
+        .box p {
+            font-size: 2vw;
+            font-weight: 600;
+            font-style: italic;
+            color: black;
+        }
+
+        @media screen and (max-width: 700px) {
+
+
+            nav {
+                flex-direction: column;
+                padding: 10px 8px;
+            }
+
+            .navright {
+                margin-left: 0;
+            }
+
+            footer {
+                flex-direction: column;
+                padding: 10px 8px;
+            }
+
+            .footright {
+                margin-left: 0;
+            }
+
+            .recipies {
+                flex-direction: column;
+                padding: 10px 8px;
+            }
+
+            .recipielink {
+                flex-direction: column;
+                padding: 10px 8px;
+                /* width: 300px; */
+                /* background-color: rgba(28, 32, 32, 0.849); */
+            }
+
+            .news {
+                flex-direction: column;
+                padding: 10px 8px;
+            }
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0px;
+            padding: 0px;
+        }
+
+        footer,
+        nav {
+            display: flex;
+            background-color: rgb(37, 37, 37);
+            /* justify-content: center; */
+            /* align-items: center; */
+        }
+
+        .foot,
+        .nav {
+            background-color: rgb(37, 37, 37);
+            border: 1px solid transparent;
+            margin: 0px;
+            padding: 20px 10px 10px 5px;
+            color: white;
+            font-size: 20px;
+            font-weight: 300;
+            text-align: center;
+            /* width: 100%; */
+            text-decoration: none;
+        }
+
+        .footright,
+        .navright {
+            background-color: rgb(37, 37, 37);
+            border: 1px solid transparent;
+            margin: 0px;
+            padding: 20px 10px 0px 5px;
+            color: white;
+            font-size: 20px;
+            font-weight: 300;
+            text-align: center;
+            /* width: 100%; */
+            text-decoration: none;
+            float: right;
+        }
+
+        .nav:hover,
+        .navright:hover,
+        .foot:hover,
+        .footright:hover {
+            color: yellow;
+            font-weight: 500;
+            /* font-size: 20px; */
+            text-decoration: underline;
+            border: 1px solid white;
+        }
+
+        .name {
+            font-family: 'Pacifico', cursive;
+            color: white;
+            font-size: 3.7vw;
+            align-self: center;
+            background-color: rgb(37, 37, 37);
+            border: 1px solid transparent;
+            margin: 0px;
+            padding: 1px 80px 0px 80px;
+        }
+
+        /* Style the search field */
+        form.example input[type=text] {
+            padding: 10px;
+            font-size: 17px;
+            border: 1px solid grey;
+            float: left;
+            width: 80%;
+            background: white;
+            /* color: white; */
+        }
+
+        /* Style the submit button */
+        form.example button {
+            float: left;
+            width: 20%;
+            padding: 10px;
+            background: #2196F3;
+            color: white;
+            font-size: 17px;
+            border: 1px solid grey;
+            border-left: none;
+            /* Prevent double borders */
+            cursor: pointer;
+        }
+
+        form.example button:hover {
+            background: #0b7dda;
+        }
+
+        /* Clear floats */
+        form.example::after {
+            content: "";
+            clear: both;
+            display: table;
+        }
+
+        .banner {
+            background-color: rgba(28, 32, 32, 0.911);
+            border: 1px solid darkslategrey;
+            background-image: url(f7.jpg);
+            margin: 0px;
+            height: 25vw;
+            width: 100%;
+            background-repeat: no-repeat;
+            background-size: 25% 25vw;
+        }
+
+        .intro {
+            background-color: rgba(28, 32, 32, 0.123);
+            border: 1px solid transparent;
+            color: white;
+
+            float: right;
+
+            margin: 2vw 10vw 0vw 1vw;
+            padding: 0vw 4vw 0vw 0vw;
+        }
+
+        .intro p {
+            font-family: 'Satisfy', cursive;
+            font-size: 2.5vw;
+        }
+
+        .moreintro a {
+            background-color: rgba(28, 32, 32, 0.486);
+            border: 1px solid white;
+            color: white;
+            border-radius: 4px;
+            font-size: 2.3vw;
+            padding: 1vw;
+            margin: 10vw 0vw 0vw 0vw;
+            text-decoration: none;
+        }
+
+        .moreintro a:hover {
+            background-color: rgba(28, 32, 32, 0.863);
+            color: yellow;
+        }
+
+        .aboutowner {
+            background-color: rgba(128, 128, 128, 0.534);
+            border: 1px solid transparent;
+            margin: 0px 0px 20px 0px;
+            padding: 2vw;
+            height: 42vw;
+            width: 100%;
+        }
+
+        .aboutowner h3 {
+            background-color: rgba(0, 128, 128, 0.685);
+            color: rgb(5, 4, 65);
+            font-weight: 700;
+            font-size: 2.2vw;
+            padding: 10px 0px 10px 10px;
+            margin: 20px 0px 10px 0px;
+        }
+
+        .about {
+            /* display: inline-block; */
+            font-size: 2vw;
+            font-weight: 600;
+            font-style: italic;
+            color: black;
+        }
+
+        .aboutowner img {
+            /* display: inline-block; */
+
+            border: 2px solid teal;
+            height: 25vw;
+            width: 20vw;
+            float: right;
+        }
+
+
+        .readmore {
+            background-color: rgba(28, 32, 32, 0.849);
+            border: 1px solid white;
+            color: white;
+            border-radius: 4px;
+            font-size: 2.3vw;
+            padding: 0.5vw;
+            margin: 100vw 0vw 0vw 0vw;
+            text-decoration: none;
+        }
+
+        .readmore:hover {
+            background-color: rgb(28, 32, 32);
+            color: yellow;
+        }
+
+        .twitter {
+            background-color: transparent;
+            border: 1px solid transparent;
+            color: #00acee;
+            font-size: 2.0vw;
+            margin: 2px;
+            padding: 0.5vw;
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        .instagram {
+            background-color: transparent;
+            border: 1px solid transparent;
+            color: #C13584;
+            ;
+            font-size: 2.0vw;
+            margin: 4px;
+            padding: 0.5vw;
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        .twitter:hover,
+        .instagram:hover {
+            /* font-size: 2.1vw; */
+            font-weight: 800;
+        }
+
+        .recipiehead {
+            background-color: transparent;
+            border: 1px solid transparent;
+            font-family: 'Satisfy', cursive;
+            font-size: 3.7vw;
+            text-align: center;
+            color: rgb(4, 39, 39);
+            margin: 20px 0px 20px 0px;
+        }
+
+        .recipies {
+            display: flex;
+            flex-wrap: nowrap;
+            /* justify-content: center; */
+            align-items: center;
+            justify-content: space-between;
+            padding: 5vw;
+        }
+
+        .recipies h4 {
+            font-size: 25px;
+        }
+
+        .recipies img {
+            height: 20vw;
+            width: 100%;
+            border: 1px solid teal;
+            /* margin: 20px; */
+        }
+
+        .recipielink {
+            display: flex;
+            background-color: transparent;
+            border: 1px solid transparent;
+            flex-wrap: nowrap;
+            /* justify-content: space-between; */
+        }
+
+        .see,
+        .search {
+            background-color: rgba(28, 32, 32, 0.849);
+            border: 1px solid white;
+            color: white;
+            height: 4.5vw;
+            /* width: 500px ; */
+            width: 70vw;
+            /* max-width: 100vw; */
+            border-radius: 4px;
+            font-size: 2.3vw;
+            padding: 0.5vw 0vw 0.5vw 10vw;
+            margin: 1vw 1vw 1vw 8vw;
+            text-decoration: none;
+        }
+
+        .see:hover,
+        .search:hover {
+            background-color: rgb(28, 32, 32);
+            color: yellow;
+        }
+
+        .news {
+            display: flex;
+            background-color: transparent;
+            border: 1px solid transparent;
+            padding: 1vw;
+            margin: 0px;
+        }
+
+        .news img {
+            border: 2px solid teal;
+            height: 25vw;
+            /* width: auto; */
+            width: 100%;
+            margin: 2vw;
+        }
+
+        .box h3 {
+            background-color: rgba(0, 128, 128, 0.685);
+            color: rgb(5, 4, 65);
+            font-weight: 700;
+            font-size: 2.2vw;
+            padding: 10px 0px 10px 10px;
+            margin: 20px 0px 10px 0px;
+        }
+
+        .box p {
+            font-size: 2vw;
+            font-weight: 600;
+            font-style: italic;
+            color: black;
+        }
+
+        @media screen and (max-width: 700px) {
+
+
+            nav {
+                flex-direction: column;
+                padding: 10px 8px;
+            }
+
+            .navright {
+                margin-left: 0;
+            }
+
+            footer {
+                flex-direction: column;
+                padding: 10px 8px;
+            }
+
+            .footright {
+                margin-left: 0;
+            }
+
+            .recipies {
+                flex-direction: column;
+                padding: 10px 8px;
+            }
+
+            .recipielink {
+                flex-direction: column;
+                padding: 10px 8px;
+                /* width: 300px; */
+                /* background-color: rgba(28, 32, 32, 0.849); */
+            }
+
+            .news {
+                flex-direction: column;
+                padding: 10px 8px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <a href="#" class="nav">BOOKS</a>
+            <a href="#" class="nav">SPICES</a>
+            <a href="#" class="nav">RECIPES</a>
+            <h1 class="name">MALLIKA BASU</h1>
+            <a href="#" class="navright">ABOUT</a>
+            <a href="#" class="navright">NEWS</a>
+            <a href="#" class="navright">EVENTS</a>
+            <a href="#" class="navright">CONTACT</a>
+            <!-- <a href="#"></a> -->
+
+        </nav>
+    </header>
+    <main>
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+        <!-- The form -->
+        <form class="example" action="action_page.php">
+            <input type="text" placeholder="Search.." name="search">
+            <button type="submit"><i class="fa fa-search"></i></button>
+        </form>
+        <div class="banner">
+            <!-- <img src="f7.jpg" alt="image not available" class="bannerimage"> -->
+            <div class="intro">
+                <p>Introducing...</p>
+                <p>SIZL SPICES</p>
+                <P>My own new range of healthy, high quality and</P>
+                <p>practically designed spices</p>
+                <div class="moreintro">
+                    <a href="#">Read more here</a>
+                </div>
+            </div>
+
+        </div>
+        <div class="aboutowner">
+            <h3>MALLIKA BASU</h3>
+            <img src="mallika1.jpg" alt="image not available">
+            <p class="about">Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit accusantium nobis
+                suscipit
+                neque sunt inventore aliquid aut provident et unde laudantium magni blanditiis explicabo, cum
+                aliquam
+                repudiandae ullam nam incidunt, alias consequuntur voluptates saepe quia laborum. Vero impedit,
+                doloremque rerum dolorem accusantium magnam veritatis error sunt. Dolor dolore non asperiores
+                magnam
+                ipsam modi distinctio, omnis eaque quaerat commodi enim, impedit quis laudantium quos. Nam sequi
+                illum
+                atque culpa, sed quae veritatis veniam, quas excepturi quibusdam tenetur velit quisquam pariatur
+                voluptatibus nesciunt minima ipsa modi porro ipsam corrupti! Quod vero reprehenderit ipsum earum
+                itaque
+                eaque, fuga quaerat numquam error nam cupiditate?</p>
+            <a href="#" class="readmore">Read More</a>
+            <a href="https://www.instagram.com/mallikabasu_/?hl=en" target="_blank" rel="noopener noreferrer"
+                class="instagram"><i class="fa fa-instagram"></i>Instagram</a>
+            <a href="https://twitter.com/MallikaBasu_?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"
+                target="_blank" rel="noopener noreferrer" class="twitter"><i class="fa fa-twitter"></i>Twitter</a>
+        </div>
+        <h3 class="recipiehead">Most Popular Reciepes</h3>
+        <div class="recipies">
+            <div class="box1">
+                <a href="#" target="_blank" rel="noopener noreferrer"><img src="biriyani1.jpg" alt="image1"></a>
+                <h4>Chicken Biriyani</h4>
+            </div>
+            <div class="box2">
+                <a href="#" target="_blank" rel="noopener noreferrer"><img src="vegi1.jpg" alt="image2"></a>
+                <h4>Dum Aloo</h4>
+            </div>
+            <div class="box3">
+                <a href="#" target="_blank" rel="noopener noreferrer"><img src="vegi2.jpg" alt="image3"></a>
+                <h4>Veg Thali</h4>
+            </div>
+        </div>
+        <div class="recipielink">
+            <a href="#" class="see">See all recipies</a>
+            <a href="#" class="search">Search recipies</a>
+        </div>
+        <div class="news">
+            <img src="mallika2.jpg" alt="image">
+            <div class="box">
+                <h3>NEWS</h3>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Excepturi dignissimos officia totam
+                    voluptate! Eveniet facilis et commodi laborum repudiandae inventore temporibus dolorum iusto, modi
+                    ipsum esse explicabo repellat at voluptas nesciunt asperiores culpa voluptates enim doloremque
+                    expedita quo incidunt quos praesentium! Consequatur, fuga mollitia ducimus, illo eos molestiae harum
+                    incidunt, nobis delectus numquam a totam cupiditate laboriosam. Doloremque eius quam saepe
+                    repellendus dolorum tempora distinctio cum vitae labore, enim nostrum.</p>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <a href="#" class="foot">FAQs</a>
+        <a href="#" class="foot">Contact us</a>
+        <a href="#" class="foot">Privacy Policy</a>
+        <a href="#" class="foot">Terms of use</a>
+        <a href="#" class="foot">Refund Policy</a>
+        <a href="#" class="footright">&copy;Copyright</a>
+    </footer>
+</body>
+
+</html>
